@@ -6,11 +6,11 @@
 
 require 'spec_helper'
 
-describe 'python-test::default' do
-  context 'When all attributes are default, on Ubuntu 18.04' do
+describe 'development::default' do
+  context 'When all attributes are default, on Ubuntu/xenial64' do
   # for a complete list of available platforms and versions see:
   # https://github.com/chefspec/fauxhai/blob/master/PLATFORMS.md
-  platform 'ubuntu', '18.04'
+  platform 'ubuntu', 'xenial64'
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
