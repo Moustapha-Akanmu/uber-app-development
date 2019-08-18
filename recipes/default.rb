@@ -57,6 +57,24 @@ end
 execute 'python-pip install plugins' do
   command 'pip install Flask-SSLify==0.1.4'
 end
-execute 'python-pip install plugins' do
+execute 'python-pip install test plugins' do
   command 'pip install pytest==2.5.2'
+end
+execute 'python-pip install test plugins' do
+  command 'pip install pytest-cov==1.6'
+end
+execute 'python-pip install test plugins' do
+  command 'pip install betamax==0.4.0'
+end
+execute 'python-pip install test plugins' do
+  command 'pip install flake8==2.1.0'
+end
+execute 'python-pip install test plugins' do
+  command 'pip install pep8==1.5.6'
+end
+execute 'python-pip install test plugins' do
+  command 'pip install pyflakes==0.8.1'
+end
+execute 'python-pip install test plugins' do
+  command 'pip install coveralls==0.4.2'
 end
